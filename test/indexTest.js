@@ -7,7 +7,7 @@ describe('HTML List Tests', () => {
   let document;
 
   before(async () => {
-    const html = fs.readFileSync('./index.html', 'utf-8'); // Correct path to index.html
+    const html = fs.readFileSync('./index.html', 'utf-8'); // Path to index.html
     dom = new JSDOM(html);
     document = dom.window.document;
   });
